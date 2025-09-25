@@ -57,6 +57,7 @@ app.get("/questoes", async (req, res) => {
 });
 
 
+
 app.listen(port, () => {            // Um socket para "escutar" as requisições
   console.log(`Serviço rodando na porta:  ${port}`);
 });
