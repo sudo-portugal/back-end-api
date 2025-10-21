@@ -1,0 +1,32 @@
+meta {
+  name: postMeuCachorroTaSumidoVercel
+  type: http
+  seq: 8
+}
+
+post {
+  url: https://back-end-api-beta.vercel.app/post
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Rex",
+    "description": "Cachorro encontrado na praça central, parece ser de raça pequena.",
+    "whatsapp": "+5511999999999",
+    "instagram": "@rex_found",
+    "race": "Vira-lata",
+    "adorno": "Coleira vermelha",
+    "color": "Marrom",
+    "neighbordhood": "Centro",
+    "reference": "Perto da padaria do João",
+    "created_date": "2025-10-20",
+    "created_time": "21:30:00"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

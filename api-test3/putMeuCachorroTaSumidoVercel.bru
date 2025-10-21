@@ -1,0 +1,22 @@
+meta {
+  name: putMeuCachorroTaSumidoVercel
+  type: http
+  seq: 9
+}
+
+put {
+  url: https://back-end-api-beta.vercel.app/post/5
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Rexona"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
